@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import SingleTodo from "./components/SingleTodo";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {
   const [todo, setTodo] = useState("");
@@ -25,7 +26,7 @@ export default function App() {
   };
   useEffect(() => {
     fetchTodos();
-  });
+  }, []);
 
   return (
     <View style={styles.container}>
