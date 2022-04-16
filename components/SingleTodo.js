@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
   },
   todo_text: {
     color: "#fff",
+    width: "70%",
   },
   edit_todo: {
     backgroundColor: "#fff",
